@@ -3,133 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Card</title>
-    <style>
-        html, body{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            width: 100%;
-            height: 100%;
-        }
-        #main{
-            width: 100%;
-            /* max-width: 800px; */
-            height: 100%;
-            background-image: linear-gradient( 89.5deg,  rgba(131, 203, 255, 0.519) 0.4%, rgba(66,144,251,1) 100.3% );
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #card{
-            width: 46vw;
-            height: 75vh;
-            max-width: 350px;
-            background-color: white;
-            border-radius: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-        #img{
-            width: 100%;
-            height: 40%;
-            
-           
-        }
-       #img img{
-            width: 100%;
-            height: 100%;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-        }
-        #order{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-        }
-        #order p{
-            text-align: center;
-        }
-        #plan{
-            background-color: rgb(172, 242, 242);
-            width: 100%;
-            height: 5.5vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-sizing: border-box;
-            padding: 1.5vw;
-        }
-        #plan-left{
-            display: flex;
-            font-weight: 100;
-            font-size: 1.5vw;
-        }
-       #plan-left img{
-        width: 3.4vw;
-        height: 4.2vh;
-        margin-right: 2vw;
-        border-radius: 8px;
-       }
-       #plan-left{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       }
-       a{
-        text-decoration: none;
-        color: rgb(6, 66, 244);
-       }
-       #payment{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: radial-gradient( circle 382px at 50% 50.2%,  rgb(102, 104, 234) 0.1%, rgba(3,1,50,1) 100.2% );
-        width:80%;
-        height: 5vh;
-        border-radius: 5px;
-        color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: 500;
-        box-shadow: 0 0 8px 2px rgb(42, 42, 42);
-       }
-
-       #cancel{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: 100;
-       }
-        
-    </style>
+    <title>Blogs</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div id="main">
-        <div id="card">
-            <div id="img">
-                <img src="https://images.unsplash.com/photo-1509291985095-788b32582a81?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZGFyayUyMGxpZ2h0JTIwYm9va3N8ZW58MHx8MHx8fDA%3D" alt="">
-            </div>
-            <div id="order">
-                <h4>Order Summary</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam magnam quam consectetur.</p>
-            </div>
+        <div id="heading">
+            <h1>Anup Ke Blogs</h1>
+        </div>
+        <div id="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati iste tenetur quam quos</p> 
+        </div>
+        <div id="page">
+            <div class="box" id="box1">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style=" color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
 
-            <div id="plan">
-                <div id="plan-left">
-                    <img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG11c2ljJTIwaWNvbnxlbnwwfHwwfHx8MA%3D%3D" alt="">
-                    <p>Annual Plan <br> $99.9/year</p>
-                </div>
-                <div id="plan-right">
-                    <a href="#">Change</a>
-                </div>
             </div>
-            <div id="payment">
-                <p>Procced to Payment</p>
+            <div class="box" id="box2">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style="color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
             </div>
-            <div id="cancel">
-                <p>Cancel Order</p>
+            <div class="box" id="box3">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style="color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="box" id="box4">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style="color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="box" id="box5">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style="color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="box" id="box6">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style="color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="box" id="box7">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style="color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="box" id="box8">
+                <img src="https://media.istockphoto.com/id/1346147567/photo/smartphone-with-white-on-display-bluetooth-headphones-on-wood-table-top-view.webp?a=1&b=1&s=612x612&w=0&k=20&c=l-C8xMCH8BgKj8YMUqYtMoCo9gLKDahPw_x29KolQNk=" alt="">
+             <div id="inside">
+                <h5 style="color: rgb(76, 76, 76);">New Gadgets Released</h5>
+                <br>
+                <p style="color: rgb(76, 76, 76);">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, minus.</p>
+                <div id="contact">
+                    <img src="https://plus.unsplash.com/premium_photo-1677252438425-e4125f74fbbe?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    <p style="color: rgb(76, 76, 76);"><a style="text-decoration: none;color: rgb(4, 54, 217);" href="#">Jone Doe</a><br>Sept&nbsp;19,&nbsp;2021</p>
+                    <div style="width: 10rem;height: 3.5vh; border: solid 2px rgb(76, 76, 76);">
+                       <p style="font-weight: 100;margin: 0.2vw;color: rgb(61, 60, 60);">Technology</p>
+                    </div>
+                </div>
+                
+              </div>
             </div>
         </div>
     </div>
